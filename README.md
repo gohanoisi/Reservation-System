@@ -90,24 +90,6 @@ Reservation-System
   5. 「空き検索」で条件を設定し、空き時間候補を一覧表示  
   6. 「自己予約確認」から自身の予約一覧を確認・個別キャンセル
 
-### CLIで起動（参考）
-- Windows:
-  ```bat
-  javac -cp .;lib\mysql-connector-j-<ver>.jar src\client_system\*.java
-  java  -cp .;lib\mysql-connector-j-<ver>.jar client_system.ReservationSystem
-  ```
-- macOS/Linux:
-  ```bash
-  javac -cp .:lib/mysql-connector-j-<ver>.jar src/client_system/*.java
-  java  -cp .:lib/mysql-connector-j-<ver>.jar client_system.ReservationSystem
-  ```
-
-### サンプル出力（画面メッセージ例）
-```
-353講義室　予約されている時間　10:00:00～11:00:00
-353講義室 予約されている時間はありません
-```
-
 ## Note
 - **認証**：現行は平文パスワード照合です。**TODO: ハッシュ化 & 認証処理の統一（PreparedStatement化）**  
 - **SQL組み立て**：一部で文字列連結によるSQLが存在。**TODO: プレースホルダへ統一**（SQLインジェクション対策）。  
@@ -120,8 +102,9 @@ Reservation-System
 
 ## Author
 - **國政 蒼矢（東京国際工科専門職大学 / AI戦略コース）**  
-- 役割：仕様策定・実装（自己予約確認/空き検索UI改善 ほか）  
-- 連絡先：TODO: メールアドレスを記載
+- 開発体制：7人グループで開発を実施し、**UI班（4人）**と**プログラム班（3人）**に分かれて作業。仕様書を完成させた後、私はプログラム班として実装を担当しました。  
+- 主な担当：自己予約確認機能・空き検索機能の実装、UI仕様書との整合性確認。  
+- 経験ポイント：チーム内での役割分担、仕様書ベースの開発フロー、UI班との調整を通じて「仕様→設計→実装」の一連のプロセスを学習。  
 
 ## License
 TODO: ライセンスを記載（例：MIT License）
