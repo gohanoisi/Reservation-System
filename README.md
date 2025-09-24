@@ -26,7 +26,7 @@ Reservation-System
 ## Installation
 1. リポジトリを取得  
    ```bash
-   git clone https://github.com/<YOUR_NAME>/Reservation-System.git
+   git clone https://github.com/gohanoisi/Reservation-System.git
    cd Reservation-System
    ```
 
